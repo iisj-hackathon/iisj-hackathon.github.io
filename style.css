@@ -1,0 +1,15 @@
+* {
+    /* Remove default padding and margin to avoid layout problems. */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Color palette */
+:root {
+    /* Declare vars here! */
+}
+
+body {
+    /* Body styling here! */
+}
