@@ -1,3 +1,4 @@
+/* Global styles */
 * {
     /* Remove default padding and margin to avoid layout problems. */
     padding: 0;
@@ -10,6 +11,7 @@
     /* Declare vars here! */
 }
 
+/* Styles for the main body */
 body {
-    /* Body styling here! */
+    height: 100vh;
 }
