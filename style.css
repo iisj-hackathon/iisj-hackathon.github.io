@@ -123,6 +123,7 @@ main {
         #ffd39a 60px
     );
 
+    /* Format for the cards on slide 2. */
     section {
         min-width: 70vw;
         padding: 20px 5vw;
@@ -141,7 +142,9 @@ main {
             font-size: 2vw;
         }
 
+        /* Format for individual slide 2 cards. */
         .slide-2-card {
+            /* Visual format: */
             background-color: white;
             border-radius: 1vw;
             border-left: 10px solid #409df5;
@@ -159,6 +162,7 @@ main {
         }
     }
 
+    /* Side image. */
     img {
         width: 40vw;
         max-height: 100vh;
@@ -169,13 +173,15 @@ main {
 
 #slide-3 {
     position: relative;
-    overflow: hidden;  /* Make sure the image doesn't exceed the boundaries */
+    overflow: hidden;  /* Make sure the image doesn't exceed the boundaries. */
 
+    /* Background image. */
     > img {
         object-fit: cover;
         filter: blur(0.5vw) brightness(0.4);
     }
 
+    /* Heading and paragraph for slide 3. */
     > div {
         position: absolute;
         top: 0;
@@ -199,6 +205,7 @@ main {
             padding-bottom: 30px;
         }
 
+        /* Slide 3 card group. */
         #slide-3-cards {
             flex-grow: 1;
             display: flex;
@@ -206,6 +213,7 @@ main {
             gap: 30px;
         }
 
+        /* Slide 3 cards. */
         .slide-3-card {
             width: 1fr;
             display: flex;
@@ -213,6 +221,8 @@ main {
             align-items: center;
             border-radius: 2vw;
             flex-grow: 1;
+
+            /* Visual formats. */
             background-color: white;
             border-left: 1.3vw solid #f5c840;
             box-shadow: 1vw 1vw 0 0 #2a2a2a;
