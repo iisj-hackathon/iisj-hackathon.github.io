@@ -10,11 +10,6 @@
     font-family: "Montserrat", "Arial", sans-serif;
 }
 
-/* Color palette */
-:root {
-    /* Declare vars here! */
-}
-
 /* Styles for the main body */
 body {
     height: 100vh;
@@ -53,6 +48,7 @@ main {
     scrollbar-width: none;
 
     section {
+        /* Scroll behavior. */
         height: 100vh;
         scroll-snap-align: center;
         scroll-snap-stop: always;
@@ -60,6 +56,7 @@ main {
 }
 
 .centered {
+    /* Centered text class. */
     display: flex;
     justify-content: center;
     text-align: center;
@@ -84,20 +81,23 @@ main {
     }
     
     h1 {
+        /* Font size for the heading (dependent of screen width). */
         font-size: 7vw;
     }
 
     p {
+        /* Font size for the paragraph (dependent of screen width). */
         font-size: 2vw;
     }
 }
 
 #horizontal-carousel {
+    /* Image carousel formats. */
     width: 100vw;
     height: 15vw;
     padding: 10px;
 
-    display: flex;
+    display: flex;  /* Align everything horizontally (flexbox). */
     justify-content: stretch;
     column-gap: 10px;
 
@@ -114,6 +114,7 @@ main {
 #slide-2 {
     display: flex;
     align-items: center;
+    /* Stripes. */
     background: repeating-linear-gradient(
         45deg,
         #ffddb0,
