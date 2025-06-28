@@ -35,24 +35,57 @@ main {
     flex-direction: column;
     align-items: stretch;
 
-    /* Scrolling behavior. */
+    /* Scrolling behavior - vertical scrolling with scroll snap. */
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
     scrollbar-width: none;
 
     section {
-        flex-grow: 1;
-        height: 0;
-        min-height: 100vh;
+        height: 100vh;
         scroll-snap-align: center;
         scroll-snap-stop: always;
     }
+}
 
-    #sections :nth-child(even) {
-        background-color: #76adfb;
+/* Formatting for each slide. */
+#slide-1 {
+    position: relative;
+    background-color: rgb(161, 210, 255);
+
+    img {  /* Background of slide 1. */
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: blur(20px);
+        z-index: -99;
     }
 
-    #sections :nth-child(odd) {
-        background-color: #95c6ff;
+    div {
+        top: 150px;
+        left: 20px;
     }
+}
+
+#horizontal-carousel {
+    width: 100vw;
+    height: 15vw;
+    /* aspect-ratio: 5 / 1; */
+    border: 1px solid red;
+    display: flex;
+    justify-content: stretch;
+    column-gap: 10px;
+
+    img {
+        object-fit: cover;  /* Prevent image stretching. */
+        width: 0;
+        flex-grow: 1;
+    }
+}
+
+#slide-2 {
+    
+}
+
+#slide-3 {
+    
 }
