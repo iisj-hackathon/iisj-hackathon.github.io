@@ -2,14 +2,15 @@
 ⚠️⚠️ WARNING ⚠️⚠️:
 This is a markdown file. Open this file in a markdown viewer.
 If you are using VS Code, right-click the file name and click "Open Preview" to view this file's contents properly.
-Otherwise, open this file using https://codebeautify.org/markdown-viewer.
+Otherwise, open this file using https://codebeautify.org/markdown-viewer or any other markdown viewer.
 -->
 
 # Our Hackathon Project
- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at ullamcorper diam. Aliquam a lectus tincidunt mauris gravida ornare. Aenean vestibulum molestie dolor, feugiat dignissim justo rutrum eget. Quisque sit amet ipsum arcu. Ut vel libero nec ex sodales blandit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+ (sample text) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at ullamcorper diam. Aliquam a lectus tincidunt mauris gravida ornare. Aenean vestibulum molestie dolor, feugiat dignissim justo rutrum eget. Quisque sit amet ipsum arcu.
+ _This project is also available on the web, at the URL https://iisj-hackathon.github.io._
 * ### What does this project use?
  This project uses HTML for the website content, CSS for styling, and JavaScript for interactive elements, like animations and visual effects. Additionally, this project uses the following libraries:
- * **Bootstrap 5**: Bootstrap is a library for responsive UI that makes it easy to create layouts that work on multiple devices and screen widths.
+ * **Bootstrap 5**: Bootstrap is a CSS and JavaScript library for responsive UI that makes it easy to create layouts that work on multiple devices and screen widths.
  * **GSAP (GreenSock Animation Platform)**: GSAP is a JavaScript library that helps with smooth, user-friendly animations.
  * **Chart.js**: Chart.js is a JavaScript library for interactive data visualization, in the form of bar charts, column charts, scatterplots, line graphs, and so on.
 
