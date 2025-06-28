@@ -1,9 +1,13 @@
+/* Font import */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* Global styles */
 * {
     /* Remove default padding and margin to avoid layout problems. */
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Montserrat", "Arial", sans-serif;
 }
 
 /* Color palette */
@@ -22,8 +26,16 @@ header {
     top: 0;
     width: 100vw;
     height: 100px;
-    background-color: white;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #262626;
     z-index: 99;
+
+    h1, p {
+        color: white;
+    }
 }
 
 /* Main section of the website. */
@@ -47,35 +59,52 @@ main {
     }
 }
 
+.centered {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
 /* Formatting for each slide. */
 #slide-1 {
     position: relative;
-    background-color: rgb(161, 210, 255);
+    background-color: black;
 
     img {  /* Background of slide 1. */
         width: 100%;
         height: 100%;
         object-fit: cover;
-        filter: blur(20px);
+        filter: blur(0.5vw) brightness(0.7);
         z-index: -99;
     }
 
-    div {
-        top: 150px;
-        left: 20px;
+    > div {
+        top: 40vh;
+        left: 80px;
+    }
+    
+    h1 {
+        font-size: 7vw;
+    }
+
+    p {
+        font-size: 2vw;
     }
 }
 
 #horizontal-carousel {
     width: 100vw;
     height: 15vw;
-    /* aspect-ratio: 5 / 1; */
-    border: 1px solid red;
+    padding: 10px;
+
     display: flex;
     justify-content: stretch;
     column-gap: 10px;
 
+    background-color: #cceff9;
+
     img {
+        border-radius: 1vw;
         object-fit: cover;  /* Prevent image stretching. */
         width: 0;
         flex-grow: 1;
@@ -83,9 +112,123 @@ main {
 }
 
 #slide-2 {
-    
+    display: flex;
+    align-items: center;
+    background: repeating-linear-gradient(
+        45deg,
+        #ffddb0,
+        #ffddb0 30px,
+        #ffd39a 30px,
+        #ffd39a 60px
+    );
+
+    section {
+        min-width: 70vw;
+        padding: 20px 5vw;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 20px;
+
+        > h1 {
+            font-size: 4vw;
+            border-bottom: 0.7vw solid black;
+        }
+
+        > p {
+            font-size: 2vw;
+        }
+
+        .slide-2-card {
+            background-color: white;
+            border-radius: 1vw;
+            border-left: 10px solid #409df5;
+            box-shadow: 10px 10px 50px -20px black;
+            padding: 10px;
+            height: 100px;
+
+            h1 {
+                font-size: max(2vw, 15px);
+            }
+
+            p {
+                font-size: 15px;
+            }
+        }
+    }
+
+    img {
+        width: 40vw;
+        max-height: 100vh;
+        object-fit: cover;
+        filter: brightness(0.7);
+    }
 }
 
 #slide-3 {
-    
+    position: relative;
+    overflow: hidden;  /* Make sure the image doesn't exceed the boundaries */
+
+    > img {
+        object-fit: cover;
+        filter: blur(0.5vw) brightness(0.4);
+    }
+
+    > div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        padding: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+
+        > h1 {
+            color: white;
+            font-size: 4vw;
+            white-space: nowrap;
+        }
+
+        > p {
+            color: white;
+            font-size: 1.5vw;
+            padding-bottom: 30px;
+        }
+
+        #slide-3-cards {
+            flex-grow: 1;
+            display: flex;
+            justify-content: stretch;
+            gap: 30px;
+        }
+
+        .slide-3-card {
+            width: 1fr;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 2vw;
+            flex-grow: 1;
+            background-color: white;
+            border-left: 1.3vw solid #f5c840;
+            box-shadow: 1vw 1vw 0 0 #2a2a2a;
+
+            h1 {
+                font-size: 2vw;
+                padding: 20px 0;
+            }
+
+            img {
+                border-radius: 0.5vw;
+                width: 100px;
+            }
+            
+            p {
+                padding: 0 10px;
+            }
+        }
+    }
 }
