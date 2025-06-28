@@ -144,7 +144,7 @@ main {
 
         /* Format for individual slide 2 cards. */
         .slide-2-card {
-            /* Visual formats */
+            /* Visual format: */
             background-color: white;
             border-radius: 1vw;
             border-left: 10px solid #409df5;
