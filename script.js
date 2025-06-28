@@ -24,7 +24,8 @@ function addHoverAnimation(timeline, timelineExitTime, element) {
     });
 }
 
-// Title hover effect
+// Title hover effect. This uses a gradient to get
+// the "expanding rectangle" effect.
 const title = document.querySelector("#slide-1 h1");
 let titleHoverAnim = gsap.timeline({ paused: true });
 titleHoverAnim.to(title, {
@@ -39,7 +40,7 @@ titleHoverAnim.to(title, {
 
 addHoverAnimation(titleHoverAnim, 0.3, title);
 
-// Image carousel animations
+// Image carousel animations.
 const hCarouselImgs = document.querySelectorAll("#horizontal-carousel > img");
 
 for (let image of hCarouselImgs) {
@@ -63,16 +64,36 @@ for (let image of hCarouselImgs) {
 }
 
 // Animations for slide 2 cards
-const cards = document.querySelectorAll(".slide-2-card");
+const slide2cards = document.querySelectorAll(".slide-2-card");
 
-for (let card of cards) {
+for (let card of slide2cards) {
     let tl = gsap.timeline({ paused: true });
     tl.to(card, {
-        transform: "scaleX(1.1)"
+        transform: "scaleX(1.1)",
+        borderLeft: "40px solid #409df5"
     })
     .addPause()
     .to(card, {
-        transform: "scaleX(1)"
+        transform: "scaleX(1)",
+        borderLeft: "10px solid #409df5"
+    });
+
+    addHoverAnimation(tl, 0.3, card);
+}
+
+
+const slide3cards = document.querySelectorAll(".slide-3-card");
+
+for (let card of slide3cards) {
+    let tl = gsap.timeline({ paused: true });
+    tl.to(card, {
+        scale: 1.1,
+        borderLeft: "5vw solid #f5c840"
+    })
+    .addPause()
+    .to(card, {
+        scale: 1,
+        borderLeft: "1.3vw solid #f5c840"
     });
 
     addHoverAnimation(tl, 0.3, card);
